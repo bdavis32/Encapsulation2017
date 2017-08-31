@@ -144,7 +144,8 @@ public class Employee {
 
     public void setLastName(String lastName) {
         if(lastName == null || lastName.isEmpty()) {
-            System.out.println("last name is required");
+            //System.out.println("last name is required");
+            throw new IllegalArgumentException("last name is required");
         }
         this.lastName = lastName;
     }
@@ -155,7 +156,9 @@ public class Employee {
 
     public void setSsn(String ssn) {
         if(ssn == null || ssn.length() < 9 || ssn.length() > 11) {
-            System.out.println("ssn is required and must be "
+            /*System.out.println("ssn is required and must be "
+                    + "between 9 and 11 characters (if hyphens are used)");*/
+            throw new IllegalArgumentException("SSN is required and must be\n"
                     + "between 9 and 11 characters (if hyphens are used)");
         }
         this.ssn = ssn;
@@ -201,7 +204,8 @@ public class Employee {
     
     public void setCubeId(String cubeId) {
         if(cubeId == null || cubeId.isEmpty()) {
-            System.out.println("cube id is required");
+            //System.out.println("cube id is required");
+            throw new IllegalArgumentException("cube ID is required");
         }
         this.cubeId = cubeId;
     }
@@ -212,7 +216,8 @@ public class Employee {
 
     public void setOrientationDate(Date orientationDate) {
         if(orientationDate == null) {
-            System.out.println("orientationDate is required");
+            throw new IllegalArgumentException("orientationDate is required");
+            //System.out.println("orientationDate is required");
         }
         this.orientationDate = orientationDate;
     }
