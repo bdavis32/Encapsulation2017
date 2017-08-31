@@ -16,8 +16,6 @@ import java.util.Date;
  * 
  * Review the tips in the document "EncapCheckList.pdf" if needed.
  *
- * @author      Jim Lombardo, WCTC Instructor
- * @version     1.02
  */
 public class Employee {
     private String firstName;
