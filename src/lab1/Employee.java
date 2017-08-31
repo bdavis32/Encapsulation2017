@@ -7,23 +7,16 @@ import java.util.Date;
  * consider if any of the properties should be mandatory and use a constructor
  * to enforce that. Review the tips in the document "EncapCheckList.pdf" if
  * needed.
- *
- * @author Jim Lombardo, WCTC Instructor
- * @version 1.02
  */
 public class Employee {
 
     private String firstName;
     private String lastName;
     private String ssn;
-
-    //These do not need private or public methods. 
-    //There's only two values for Boolean properties: 0 (false) or 1 (true)
-    boolean metWithHr;
-    boolean metDeptStaff;
-    boolean reviewedDeptPolicies;
-    boolean movedIn;
-    //End of Boolean
+    private boolean metWithHr;
+    private boolean metDeptStaff;
+    private boolean reviewedDeptPolicies;
+    private boolean movedIn;
     private String cubeId;
     private Date orientationDate;
 
@@ -67,4 +60,37 @@ public class Employee {
     public void setOrientationDate(Date orientationDate) {
         this.orientationDate = orientationDate;
     }
+
+    public boolean isMetWithHr() {
+        return metWithHr;
+    }
+
+    public void setMetWithHr(boolean metWithHr) {
+        this.metWithHr = metWithHr;
+    }
+
+    public boolean isMetDeptStaff() {
+        return metDeptStaff;
+    }
+
+    public void setMetDeptStaff(boolean metDeptStaff) {
+        this.metDeptStaff = metDeptStaff;
+    }
+
+    public boolean isReviewedDeptPolicies() {
+        return reviewedDeptPolicies;
+    }
+
+    public void setReviewedDeptPolicies(boolean reviewedDeptPolicies) {
+        this.reviewedDeptPolicies = reviewedDeptPolicies;
+    }
+
+    public boolean isMovedIn() {
+        return movedIn;
+    }
+
+    public void setMovedIn(boolean movedIn) {
+        this.movedIn = movedIn;
+    }
+    
 }
