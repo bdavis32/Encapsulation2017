@@ -33,7 +33,7 @@ public class Employee {
         this.lastName = lastName;
         this.ssn = ssn;
     }
-    public void hireEmployee(){
+    public void doFirstTimeOrientation(){
         meetWithHrForBenefitAndSalryInfo();
         meetDepartmentStaff();
         reviewDeptPolicies();
