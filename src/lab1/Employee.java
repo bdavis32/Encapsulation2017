@@ -20,6 +20,21 @@ public class Employee {
     private String cubeId;
     private Date orientationDate;
 
+    public Employee(String firstName, String lastName, String ssn, 
+            boolean metWithHr, boolean metDeptStaff, boolean reviewedDeptPolicies, boolean movedIn, 
+            String cubeId, Date orientationDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
+        this.metWithHr = metWithHr;
+        this.metDeptStaff = metDeptStaff;
+        this.reviewedDeptPolicies = reviewedDeptPolicies;
+        this.movedIn = movedIn;
+        this.cubeId = cubeId;
+        this.orientationDate = orientationDate;
+    }
+
+    
     //Getters and Setters
     public String getFirstName() {
         return firstName;
