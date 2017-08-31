@@ -33,7 +33,12 @@ public class Employee {
         this.lastName = lastName;
         this.ssn = ssn;
     }
-
+    public void hireEmployee(){
+        meetWithHrForBenefitAndSalryInfo();
+        meetDepartmentStaff();
+        reviewDeptPolicies();
+        moveIntoCubicle(cubeId);
+    }
     // Assume this must be performed first, and assume that an employee
     // would only do this once, upon being hired.
     public void meetWithHrForBenefitAndSalryInfo() {
