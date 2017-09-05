@@ -100,7 +100,7 @@ public class Employee {
     // doFirtTimeOrientation()
     private void meetDepartmentStaff() {
         metDeptStaff = true;
-        System.out.println(firstName + " " + lastName + " met with Dept. Staff on "
+        output.simpleOutput(firstName + " " + lastName + " met with Dept. Staff on "
             + getFormattedDate());
     }
 
@@ -109,7 +109,7 @@ public class Employee {
     // independently from other classes.
     public void reviewDeptPolicies() {
         reviewedDeptPolicies = true;
-        System.out.println(firstName + " " + lastName + " reviewed Dept policies on "
+        output.simpleOutput(firstName + " " + lastName + " reviewed Dept policies on "
             + getFormattedDate());
     }
 
@@ -119,7 +119,7 @@ public class Employee {
     public void moveIntoCubicle(String cubeId) {
         this.cubeId = cubeId;
         this.movedIn = true;
-        System.out.println(firstName + " " + lastName + " moved into cubicle "
+        output.simpleOutput(firstName + " " + lastName + " moved into cubicle "
                 + cubeId + " on " + getFormattedDate());
     }
 
