@@ -89,7 +89,7 @@ public class Employee {
     // and should only be called as part of the larger task of:
     private void meetWithHrForBenefitAndSalryInfo() {
         metWithHr = true;
-        output.simpleOutput(firstName + " " + lastName + " met with Hr on "
+        output.outputMessage(firstName + " " + lastName + " met with Hr on "
             + getFormattedDate());
     }
 
@@ -100,7 +100,7 @@ public class Employee {
     // doFirtTimeOrientation()
     private void meetDepartmentStaff() {
         metDeptStaff = true;
-        output.simpleOutput(firstName + " " + lastName + " met with Dept. Staff on "
+        output.outputMessage(firstName + " " + lastName + " met with Dept. Staff on "
             + getFormattedDate());
     }
 
@@ -109,7 +109,7 @@ public class Employee {
     // independently from other classes.
     public void reviewDeptPolicies() {
         reviewedDeptPolicies = true;
-        output.simpleOutput(firstName + " " + lastName + " reviewed Dept policies on "
+        output.outputMessage(firstName + " " + lastName + " reviewed Dept policies on "
             + getFormattedDate());
     }
 
@@ -119,7 +119,7 @@ public class Employee {
     public void moveIntoCubicle(String cubeId) {
         this.cubeId = cubeId;
         this.movedIn = true;
-        output.simpleOutput(firstName + " " + lastName + " moved into cubicle "
+        output.outputMessage(firstName + " " + lastName + " moved into cubicle "
                 + cubeId + " on " + getFormattedDate());
     }
 
